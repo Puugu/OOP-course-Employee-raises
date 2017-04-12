@@ -44,4 +44,31 @@ public class Employee {
         //this method assumes user is setting the salary of the new employee separately
         this.salary = salary;
     }
+    
+    public String getEmployeeFirstName(){
+        //this method returns the employee's first name
+        return firstName;
+    }
+    
+    public String getEmployeeLastName(){
+        //this method returns the employee's last name
+        return lastName;
+    }
+    
+    public String getEmployeeFullNameFL(){
+        //this method returns the employee's full name in 'first name' 'last name' format
+        String fullName = firstName+" "+lastName;
+        return fullName;
+    }
+    
+    public String getEmployeeFullNameLF(){
+        //this method returns the employee's full name in 'last name' 'first name' format
+        String fullName = lastName+", "+firstName;
+        return fullName;
+    }
+    
+    public double getEmployeeSalary(){
+        //this method returns the employee's current salary
+        return salary;
+    }
 }
