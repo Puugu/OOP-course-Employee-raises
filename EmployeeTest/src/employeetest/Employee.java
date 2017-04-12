@@ -71,4 +71,19 @@ public class Employee {
         //this method returns the employee's current salary
         return salary;
     }
+    
+    public void giveRaise(int percentIncrease){
+        //this method gives the employee a raise
+        //percentIncrease is expected to be entered as a numerical value that will be converted to a decimal percentage
+        //Ex. for a raise of 8%, percentIncrease will be 8. giveRaise will then convert this to 0.08;
+        double raiseAmount = 1+(percentIncrease/100);
+        this.salary = this.salary*raiseAmount;
+    }
+    
+    public void giveRaise(double percentIncrease){
+        //this method give the employee a raise
+        //percentIncrease is expected to be a decimal percentage
+        //Ex. for a raise of 8%, percentIncrease will be 0.08
+        this.salary = this.salary*(1+percentIncrease);
+    }
 }
