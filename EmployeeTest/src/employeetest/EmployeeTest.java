@@ -7,7 +7,7 @@ package employeetest;
 
 /**
  *
- * @author Courtney
+ * @author Puugu
  */
 public class EmployeeTest {
 
